@@ -23,8 +23,6 @@
 ### Endpoints
 > Here is a list of endpoints implemented to get user's responses to different questions
 
-> API structure: https://nkunzislackbot.herokuapp.com/api/user-response/:userId/question-number
-
 > - [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T) to get user's answers
 > - [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-one) to get user's question one answer
 > - [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-two) to get user's question two answer
