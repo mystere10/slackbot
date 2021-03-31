@@ -3,7 +3,10 @@ const botController = require("../controllers");
 
 const router = express.Router();
 
+router.get("/", botController.home);
+
 router.get("/user-response/:userId", botController.getUserResponses);
+
 router.get(
   "/user-response/:userId/question-one",
   botController.getFirstQuestion

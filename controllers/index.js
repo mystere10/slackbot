@@ -1,5 +1,9 @@
 const botModel = require("../models");
 
+exports.home = (req, res, nex) => {
+  res.send("Welcome to Slack bot");
+};
+
 exports.getUserResponses = (req, res, next) => {
   const userId = req.params.userId;
   botModel

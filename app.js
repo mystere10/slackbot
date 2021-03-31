@@ -314,6 +314,10 @@ slackInteractions.viewSubmission(
   }
 );
 
+app.get("*", (req, res) => {
+  res.status(404).send("Not available");
+});
+
 const port = process.env.PORT || 3000;
 
 // Starts server
