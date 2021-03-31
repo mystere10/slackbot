@@ -1,5 +1,5 @@
 const express = require("express");
-const bodyParser = require("body-parser");
+const dotenv = require("dotenv");
 const mongoose = require("mongoose");
 const { createEventAdapter } = require("@slack/events-api");
 const { WebClient } = require("@slack/web-api");
@@ -16,6 +16,8 @@ const {
   inputDigitsModalBlock,
   thankYouBlock,
 } = require("./util/blockkit");
+
+dotenv.config();
 const app = express();
 
 mongoose.set("useNewUrlParser", true);
