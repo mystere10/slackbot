@@ -1,31 +1,33 @@
-const mongoose = require('mongoose')
+const mongoose = require("mongoose");
 
-const Schema = mongoose.Schema
+const Schema = mongoose.Schema;
 
 const botSchema = new Schema({
-    user: {
-        type: String,
-        required: true
+  userId: {
+    type: String,
+    required: true,
+  },
+  username: {
+    type: String,
+    required: true,
+  },
+  questionOneResponse: {
+    type: String,
+    required: false,
+  },
+  questionTwoResponse: {
+    type: String,
+    required: false,
+  },
+  questionThreeResponse: [
+    {
+      type: String,
     },
-    feeling: {
-        type: String,
-        required: true
-    },
-    freeDay: {
-        type: String,
-        required: true
-    },
-    freeTime: {
-        type: String,
-        required: true
-    },
-    hobbies: {
-        type: String
-    },
-    digits: {
-        type: Number
-    }
+  ],
+  questionFourResponse: {
+    type: String,
+    required: false,
+  },
+});
 
-})
-
-module.exports = mongoose.model('Bot', botSchema)
+module.exports = mongoose.model("Bot", botSchema);

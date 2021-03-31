@@ -4,19 +4,24 @@
   "description": "A slack bot",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "env-cmd nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nkunzi Innocent",
   "license": "ISC",
   "dependencies": {
     "@slack/events-api": "^3.0.0",
+    "@slack/interactive-messages": "^2.0.1",
     "@slack/web-api": "^6.1.0",
     "body-parser": "^1.19.0",
+    "env-cmd": "^10.1.0",
     "express": "^4.17.1",
     "mongodb": "^3.6.5",
     "mongoose": "^5.12.2",
     "mve": "^0.1.2",
     "nodemon": "^2.0.7"
+  },
+  "devDependencies": {
+    "ngrok": "^4.0.0"
   }
 }

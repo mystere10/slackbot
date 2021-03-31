@@ -1,8 +1,27 @@
-const express = require('express')
-const botController = require('../controllers')
+const express = require("express");
+const botController = require("../controllers");
 
-const router = express.Router()
+const router = express.Router();
 
-router.post('/', botController.greetings)
+router.get("/user-response/:userId", botController.getUserResponses);
+router.get(
+  "/user-response/:userId/question-one",
+  botController.getFirstQuestion
+);
 
-module.exports = router
+router.get(
+  "/user-response/:userId/question-two",
+  botController.getSecondQuestion
+);
+
+router.get(
+  "/user-response/:userId/question-three",
+  botController.getThirdQuestion
+);
+
+router.get(
+  "/user-response/:userId/question-four",
+  botController.getFourthQuestion
+);
+
+module.exports = router;

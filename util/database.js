@@ -4,7 +4,7 @@ const mongoClient = mongodb.MongoClient
 const mongoConnection = callback => {
     mongoClient.connect('mongodb+srv://nkunzi:nkunzi@cluster0.06bhy.mongodb.net/slackbot?retryWrites=true&w=majority', { useUnifiedTopology: true })
     .then((client) => {
-        console.log(client)
+        console.log("Connected")
         callback(client)
     }).catch((err) => {
         console.log(err)
