@@ -1,5 +1,7 @@
 node_modules/
+.nyc_output
 build
 npm-debug.log
 .env
 .DS_Store
+coverage
