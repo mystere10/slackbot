@@ -1,4 +1,5 @@
 ## Slack bot
+---
 
 ### Description
 
@@ -24,8 +25,8 @@
 
 > API structure: https://nkunzislackbot.herokuapp.com/api/user-response/:userId/question-number
 
-> [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T) to get user's answers
-> GET https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-one to get user's question one answer
-> GET https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-two to get user's question two answer
-> GET https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-three to get user's question three answer
-> GET https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-four to get user's question four answer
+> - [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T) to get user's answers
+> - [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-one) to get user's question one answer
+> - [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-two) to get user's question two answer
+> - [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-three) to get user's question three answer
+> - [GET](https://nkunzislackbot.herokuapp.com/api/user-response/U01SN0VJ50T/question-four) to get user's question four answer
